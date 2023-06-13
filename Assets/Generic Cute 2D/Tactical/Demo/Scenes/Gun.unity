@@ -887,6 +887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1355,8 +1356,8 @@ Canvas:
   m_GameObject: {fileID: 679829842}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1247799646}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1953,7 +1954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.3166, y: -12.0014}
+  m_AnchoredPosition: {x: 13.316601, y: -12.0014}
   m_SizeDelta: {x: -26.6333, y: -24.0028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829448679
@@ -4542,7 +4543,7 @@ PrefabInstance:
     - target: {fileID: 2890272846558353421, guid: cec20091f57e95742b942b852b511768, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: dfbea98f1c966594fb9b32d78f5e06bb, type: 2}
+      objectReference: {fileID: 9100000, guid: 082fb6950feebb949ad3a096cab92a8e, type: 2}
     - target: {fileID: 2890272846558353423, guid: cec20091f57e95742b942b852b511768, type: 3}
       propertyPath: m_RootOrder
       value: 4
