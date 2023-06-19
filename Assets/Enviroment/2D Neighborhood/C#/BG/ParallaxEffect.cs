@@ -16,7 +16,7 @@ public class ParallaxEffect : MonoBehaviour
 
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
-    void Update()
+    void FixedUpdate()
     {
         float temp = (cam.transform.position.x * (1 - parallexEffect));
 
