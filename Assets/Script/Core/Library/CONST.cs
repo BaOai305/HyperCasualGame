@@ -13,15 +13,19 @@ namespace Assets.Script.Core.Library
         public static readonly Vector3 INSTANCED_PREFAB_ANIMATION_POSITION = new Vector3(1, -0.7f, 1);
 
         // Path to Assets Folder Resources
-        public static readonly string ANIMATOR_CONTROLLER_PATH = "AnimatorControllers/Gun2";
+        public static readonly string ANIMATOR_CONTROLLER_PATH = "AnimatorControllers/Gun2New";
+        public static readonly string PREFAB_ANIMATED_PATH = "Prefabs/Sakura";
 
+
+        // Virtual Camera
+        public static readonly string VIRTUAL_CAMERA_NAME = "CM vcam1";
         // Player Input Actionss
         public static readonly string PLAYER_INPUT_ACTIONS_PATH = "InputActionAssets/PlayerInputActions";
         public static readonly string ACTIONMAP_PLAYER = "Player";
         public static readonly string ACTIONMAP_UI = "UI";
         public static readonly string ACTION_MOVE = "Move";
         public static readonly string ACTION_JUMP = "Jump";
-        //public static readonly string ACTION_RUN = "Run";
+        public static readonly string ACTION_RUN = "Run";
         public static readonly string ACTION_FIRE = "Fire";
 
 

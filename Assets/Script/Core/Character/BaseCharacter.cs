@@ -27,6 +27,14 @@ namespace Assets.Script.Core.Character
         private bool isInGround;
         private bool isAccelerating;
 
+        // docs description all the properties of character
+        /**
+         * id: id of character
+         * nameDisplay: name of character
+         * maxHealth: max health of character
+         * currentHealth: current health of character
+         * maxMana: max mana of character
+         * **/
 
         // getter and setter
         public string Id { get => id; set => id = value; }
@@ -43,5 +51,6 @@ namespace Assets.Script.Core.Character
         public CharacterState CharacterState { get => characterState; set => characterState = value; }
         public bool IsInGround { get => isInGround; set => isInGround = value; }
         public bool IsAccelerating { get => isAccelerating; set => isAccelerating = value; }
+    
     }
 }
