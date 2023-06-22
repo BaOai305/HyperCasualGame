@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Dust
   layers:
   - Default
   - TransparentFX
@@ -37,8 +38,17 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Char
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1207905123
+    locked: 0
+  - name: Background 1
+    uniqueID: 3817450801
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 3070063421
     locked: 0
