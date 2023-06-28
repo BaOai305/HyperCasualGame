@@ -26,6 +26,14 @@ public class WeaponEnum
         Grenade
     }
 
+    public enum EFireMode
+    {
+        Single,
+        Burst,
+        Auto,
+        Heavy
+    }
+
     public enum EWeaponState
     {
         Idle,

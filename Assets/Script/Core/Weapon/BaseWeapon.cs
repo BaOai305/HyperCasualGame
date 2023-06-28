@@ -7,11 +7,15 @@ using Assets.Script.Core.Weapon;
 
 namespace Assets.Script.Core.Weapon
 {
+    [Serializable]
     public class BaseWeapon : IBaseWeapon
     {
         // identity
         private string id;
         private string nameDisplay;
+
+        // sprite
+        private string spritePath;
 
         // stats
         private float attackDamage;
@@ -32,12 +36,17 @@ namespace Assets.Script.Core.Weapon
         private WeaponEnum.EWeaponType weaponType;
         private WeaponEnum.EAmmoType ammoType;
         private WeaponEnum.EWeaponState weaponState;
+        private WeaponEnum.EFireMode[] fireMode;
 
         // constructor
-        public BaseWeapon(string id, string nameDisplay, float attackDamage, float fireRate, float reloadTime, float spreadAim, float mass, int ammoTotal, int ammoCurrent, float moveSpeedMultiplier, float jumpSpeedpMultiplier, WeaponEnum.EWeaponType weaponType, WeaponEnum.EAmmoType ammoType, WeaponEnum.EWeaponState weaponState)
+        public BaseWeapon(string id, string nameDisplay, string spritePath, float attackDamage, float fireRate, 
+            float reloadTime, float spreadAim, float mass, int ammoTotal, int ammoCurrent, float moveSpeedMultiplier, 
+            float jumpSpeedpMultiplier, WeaponEnum.EWeaponType weaponType, WeaponEnum.EAmmoType ammoType, 
+            WeaponEnum.EWeaponState weaponState, WeaponEnum.EFireMode[] fireMode)
         {
             this.id = id;
             this.nameDisplay = nameDisplay;
+            this.spritePath = spritePath;
             this.attackDamage = attackDamage;
             this.fireRate = fireRate;
             this.reloadTime = reloadTime;
@@ -50,26 +59,29 @@ namespace Assets.Script.Core.Weapon
             this.weaponType = weaponType;
             this.ammoType = ammoType;
             this.weaponState = weaponState;
+            this.fireMode = fireMode;
         }
+
 
         public BaseWeapon() { }
 
         // getter and setter
-        public string Id { get => id; set => id = value; }
-        public string NameDisplay { get => nameDisplay; set => nameDisplay = value; }
-        public float AttackDamage { get => attackDamage; set => attackDamage = value; }
-        public float FireRate { get => fireRate; set => fireRate = value; }
-        public float ReloadTime { get => reloadTime; set => reloadTime = value; }
-        public float SpreadAim { get => spreadAim; set => spreadAim = value; }
-        public float Mass { get => mass; set => mass = value; }
-        public int AmmoTotal { get => ammoTotal; set => ammoTotal = value; }
-        public int AmmoCurrent { get => ammoCurrent; set => ammoCurrent = value; }
-        public float MoveSpeedMultiplier { get => moveSpeedMultiplier; set => moveSpeedMultiplier = value; }
-        public float JumpSpeedpMultiplier { get => jumpSpeedpMultiplier; set => jumpSpeedpMultiplier = value; }
-        public WeaponEnum.EWeaponType WeaponType { get => weaponType; set => weaponType = value; }
-        public WeaponEnum.EAmmoType AmmoType { get => ammoType; set => ammoType = value; }
-        public WeaponEnum.EWeaponState WeaponState { get => weaponState; set => weaponState = value; }
-
+        public string Id { get; set; }
+        public string NameDisplay { get; set; }
+        public string SpritePath { get; set; }
+        public float AttackDamage { get; set; }
+        public float FireRate { get; set; }
+        public float ReloadTime { get; set; }
+        public float SpreadAim { get; set; }
+        public float Mass { get; set; }
+        public int AmmoTotal { get; set; }
+        public int AmmoCurrent { get; set; }
+        public float MoveSpeedMultiplier { get; set; }
+        public float JumpSpeedpMultiplier { get; set; }
+        public WeaponEnum.EWeaponType WeaponType { get; set; }
+        public WeaponEnum.EAmmoType AmmoType { get; set; }
+        public WeaponEnum.EWeaponState WeaponState { get; set; }
+        public WeaponEnum.EFireMode[] FireMode { get; set; }
 
     }
 }

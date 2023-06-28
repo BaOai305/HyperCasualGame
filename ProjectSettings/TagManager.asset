@@ -38,17 +38,17 @@ TagManager:
   - 
   - 
   - 
-  - Char
+  - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 1207905123
+    uniqueID: 1514062827
     locked: 0
-  - name: Background 1
-    uniqueID: 3817450801
+  - name: Background1
+    uniqueID: 764256745
+    locked: 0
+  - name: Terrain
+    uniqueID: 538613843
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Terrain
-    uniqueID: 3070063421
     locked: 0
